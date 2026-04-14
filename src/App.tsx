@@ -31,7 +31,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b1326] text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+    <div className="min-h-screen bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary">
       <Sidebar activePage={activePage} onPageChange={setActivePage} />
       
       <div className="pl-64">

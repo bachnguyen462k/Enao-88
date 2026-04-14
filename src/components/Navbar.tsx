@@ -2,30 +2,30 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 right-0 left-64 h-20 z-40 flex items-center justify-between px-8 bg-[#0b1326]/80 backdrop-blur-xl border-b border-white/5">
+    <header className="fixed top-0 right-0 left-64 h-20 z-40 flex items-center justify-between px-8 bg-surface/80 backdrop-blur-xl border-b border-outline-variant">
       <div className="flex items-center flex-1 max-w-xl">
-        <div className="relative w-full focus-within:ring-1 focus-within:ring-[#00E676]/30 rounded-full bg-surface-container-low px-4 py-2 flex items-center gap-3 border border-white/5">
+        <div className="relative w-full focus-within:ring-1 focus-within:ring-primary/30 rounded-full bg-surface-container-low px-4 py-2 flex items-center gap-3 border border-outline-variant">
           <span className="material-symbols-outlined text-slate-400">search</span>
           <input
             className="bg-transparent border-none focus:ring-0 text-sm text-on-surface w-full"
-            placeholder="Search matches, teams, or analysts..."
+            placeholder="Tìm kiếm trận đấu, đội bóng hoặc chuyên gia..."
             type="text"
           />
         </div>
       </div>
       <div className="flex items-center gap-6">
         <div className="flex gap-4">
-          <button className="p-2 text-slate-300 hover:bg-white/5 rounded-full transition-all flex items-center justify-center">
+          <button className="p-2 text-slate-500 hover:bg-black/5 rounded-full transition-all flex items-center justify-center">
             <span className="material-symbols-outlined">notifications</span>
           </button>
-          <button className="p-2 text-slate-300 hover:bg-white/5 rounded-full transition-all flex items-center justify-center">
+          <button className="p-2 text-slate-500 hover:bg-black/5 rounded-full transition-all flex items-center justify-center">
             <span className="material-symbols-outlined">settings</span>
           </button>
         </div>
-        <div className="flex items-center gap-3 pl-6 border-l border-white/10">
+        <div className="flex items-center gap-3 pl-6 border-l border-outline-variant">
           <div className="text-right">
-            <p className="text-sm font-bold text-on-surface">Analyst Profile</p>
-            <p className="text-[10px] text-primary font-bold uppercase tracking-wider">Tier 1 Analyst</p>
+            <p className="text-sm font-bold text-on-surface">Hồ sơ chuyên gia</p>
+            <p className="text-[10px] text-primary font-bold uppercase tracking-wider">Chuyên gia cấp 1</p>
           </div>
           <img
             alt="Analyst Profile"
