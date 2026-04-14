@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container: #171f33;
+  --color-on-tertiary: #68000c;
+  --color-on-primary-container: #00612e;
+  --color-on-primary-fixed-variant: #005226;
+  --color-outline-variant: #3b4a3d;
+  --color-on-surface: #dae2fd;
+  --color-tertiary-fixed: #ffdad7;
+  --color-on-tertiary-container: #a90d1e;
+  --color-background: #0b1326;
+  --color-inverse-surface: #dae2fd;
+  --color-on-tertiary-fixed-variant: #930015;
+  --color-on-tertiary-fixed: #410004;
+  --color-secondary-container: #fdd400;
+  --color-on-error: #690005;
+  --color-surface-container-lowest: #060e20;
+  --color-on-secondary: #3a3000;
+  --color-on-surface-variant: #bacbb9;
+  --color-primary-fixed-dim: #00e475;
+  --color-primary-container: #00e676;
+  --color-on-secondary-container: #6f5c00;
+  --color-surface-variant: #2d3449;
+  --color-on-primary-fixed: #00210b;
+  --color-secondary-fixed-dim: #e9c400;
+  --color-tertiary-fixed-dim: #ffb3ae;
+  --color-surface-dim: #0b1326;
+  --color-surface-tint: #00e475;
+  --color-secondary: #fff3d2;
+  --color-primary-fixed: #62ff96;
+  --color-on-primary: #003918;
+  --color-on-secondary-fixed: #221b00;
+  --color-tertiary: #ffddda;
+  --color-surface-container-low: #131b2e;
+  --color-outline: #859585;
+  --color-inverse-primary: #006d35;
+  --color-error: #ffb4ab;
+  --color-secondary-fixed: #ffe170;
+  --color-surface: #0b1326;
+  --color-error-container: #93000a;
+  --color-surface-container-highest: #2d3449;
+  --color-surface-container-high: #222a3d;
+  --color-on-error-container: #ffdad6;
+  --color-tertiary-container: #ffb6b1;
+  --color-surface-bright: #31394d;
+  --color-on-background: #dae2fd;
+  --color-inverse-on-surface: #283044;
+  --color-primary: #75ff9e;
+  --color-on-secondary-fixed-variant: #544600;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-panel {
+  backdrop-filter: blur(20px);
+  background: rgba(45, 52, 73, 0.6);
+}
+
+.pulse-live {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+.podium-gradient-1 {
+  background: linear-gradient(135deg, #00e676 0%, #75ff9e 100%);
+}
